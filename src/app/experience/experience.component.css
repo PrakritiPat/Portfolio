@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure body takes up full viewport height */
+    width: 100vw;
+    width: 100vw; /* Ensure navbar stretches across the full viewport width */
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    cursor: url('/assets/cursor2.png'), auto;
+    background-image: url('/assets/navy.jpeg'); /* Replace with the path to your image */
+    background-size: cover; /* Cover the entire page */
+    min-height: 110vh; /* Ensure body covers at least the viewport height */
+    background-position: center center; /* Center the image */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+        
+} 
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #091023;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0; /* Ensure navbar starts at the very left */
+    width: 100vw; /* Ensure navbar stretches across the full viewport width */
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    z-index: 1000; /* Ensure navbar is on top */
+  }
+  .navbar a {
+      
+      display: block;
+      color: #C71585;
+      text-align: center;
+      border-radius: 10px;
+      padding: 14px 20px;
+      text-decoration: none;
+     
+
+  }
+  .navbar a:hover {
+      background-color: #091B8B;
+      color: #C71585;
+  }
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+.lassen-peak h1 {
+    font-size: 29px;
+    color: #FF369A;
+    font-family: 'Inter', serif;
+    
+}
+
+
+.Virtual-Reality h1{
+    font-size: 30px;
+    font-family:'Inter', serif;
+}
+
+.leftcontainer {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+}
+
+.lassen-peak {
+    margin-left: 25px; /* Move the heading to the right */
+    font-family: 'Inter', serif; /* Change the font */
+}
+
+.lpa {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 20px; 
+    border-radius: 15px;
+    box-sizing: border-box; /* Include padding in the element's width */
+    color: #FFFFFF;
+}
+
+.rightcontainer {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.lassenpeakimage img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Adjust to make the image corners rounded */
+}
+
+.main-header {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Styles for the new section */
+.content2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Add some space between the sections */
+}
+
+.leftcontainer2 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+.leftcontainer2 .Virtual-Reality h1 {
+    font-size: 30px;
+    font-family:'Inter', serif;
+   
+    color:#FF369A;
+
+}
+
+.ivr {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 10px; 
+   color: #FFFFFF;
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.rightcontainer2 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.rightcontainer2 img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Adjust to make the image corners rounded */
+}
+
+
+
+
+/* third*/
+.content3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Add some space between the sections */
+}
+
+.leftcontainer3 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+.leftcontainer3 .HCI-Lab h1 {
+    font-size: 30px;
+    font-family:'Inter', serif;
+    color:#FF369A;
+}
+
+.hci {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 10px; 
+    color: #FFFFFF;
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.rightcontainer3 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.rightcontainer3 img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Adjust to make the image corners rounded */
+}
+
+
+
+
+/*fourth*/
+.content4 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Add some space between the sections */
+}
+
+.leftcontainer4 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+.leftcontainer4 .GWC h1 {
+    font-size: 30px;
+    font-family:'Inter', serif;
+    color:#FF369A;
+}
+
+.gwc {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 10px; 
+    color: #FFFFFF;
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.rightcontainer4 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.rightcontainer4 img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Adjust to make the image corners rounded */
+}
+
+
+
+/*5th*/
+
+
+
+.content5 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Add some space between the sections */
+}
+
+.leftcontainer5 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+.leftcontainer5 .ACM h1 {
+    font-size: 30px;
+    font-family:'Inter', serif;
+    color:#FF369A;
+}
+
+.acm {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 10px; 
+    color: #FFFFFF;
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.rightcontainer5 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.rightcontainer5 img {
+    max-width: 100%;
+    max-height: 100%; /* Ensure the image fits within the container */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Adjust to make the image corners rounded */
+}

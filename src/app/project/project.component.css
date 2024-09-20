@@ -6,8 +6,8 @@ body {
     width: 100vw; /* Ensure navbar stretches across the full viewport width */
     font-family: 'Inter', sans-serif;
     font-size: 22px;
-    cursor: url('/assets/cursor2.png'), auto;
-    background-image: url('/assets/navy.jpeg'); /* Replace with the path to your image */
+    cursor: url('/assets/oct.png.png'), auto;
+    background-color: white;
     background-size: cover; /* Cover the entire page */
     min-height: 110vh; /* Ensure body covers at least the viewport height */
     background-position: center center; /* Center the image */
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #091023;
+    background-color: rgb(207, 189, 215);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -34,7 +34,7 @@ body {
   .navbar a {
       
       display: block;
-      color: #C71585;
+      color: #4d12a1;
       text-align: center;
       border-radius: 10px;
       padding: 14px 20px;
@@ -43,15 +43,14 @@ body {
 
   }
   .navbar a:hover {
-      background-color: #091B8B;
-      color: #C71585;
+      background-color: #ab0bbd;
+      color: white;
   }
-
 .pcontent {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
-    margin-top: 20px; /* Add some space between the sections */
+    padding: 10px;
+    margin-top: 100px;
 }
 
 .pleftcontainer {
@@ -63,10 +62,10 @@ body {
 .pleftcontainer5 .weatherapp h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color: #FF369A;
+    color: #4d12a1;
 }
 .project1 h1{
-    color:#FF369A;
+    color:#4d12a1;
     font-size: 29px;
 
 }
@@ -75,7 +74,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #FFFFFF;
+   color: #7A82B0;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -122,10 +121,10 @@ body {
 .pleftcontainer5 .weatherapp h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color: #FF369A;
+    color: #4d12a1;
 }
 .project2 h1{
-    color:#FF369A;
+    color:#4d12a1;
         font-size: 29px;
 
 }
@@ -134,7 +133,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #FFFFFF;
+   color: #7A82B0;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -180,7 +179,7 @@ body {
     color: #FF369A;
 }
 .project3 h1{
-    color:#FF369A;
+    color:#4d12a1;
         font-size: 29px;
 
 }
@@ -189,7 +188,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #FFFFFF;
+   color: #7A82B0;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 

@@ -1,0 +1,23 @@
+.typing h1 {
+    font-family: 'Inter', serif;
+    font-size: 2rem; /* Adjust as needed */
+    color: #FF369A;
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow text */
+    display: inline-block;
+  }
+  
+  .cursor {
+    border-right: 3px solid #FF369A; /* Blinking cursor */
+    animation: blink 0.5s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from {
+      border-right-color: #FF369A;
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  

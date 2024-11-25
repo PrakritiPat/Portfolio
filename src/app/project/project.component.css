@@ -7,7 +7,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     cursor: url('/assets/oct.png.png'), auto;
-    background-color: white;
+    background-color: black;
     background-size: cover; /* Cover the entire page */
     min-height: 110vh; /* Ensure body covers at least the viewport height */
     background-position: center center; /* Center the image */
@@ -15,11 +15,11 @@ body {
         
 } 
   
-  .navbar {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background-color: rgb(207, 189, 215);
+    background-color: black;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -27,25 +27,28 @@ body {
     width: 100vw; /* Ensure navbar stretches across the full viewport width */
     height: 100px;
     margin: 0;
-    padding: 0;
+    padding: 0 50px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     z-index: 1000; /* Ensure navbar is on top */
   }
   .navbar a {
       
       display: block;
-      color: #4d12a1;
+      color: #FF369A;
       text-align: center;
       border-radius: 10px;
       padding: 14px 20px;
+      font-size: 17px; 
+
       text-decoration: none;
      
 
   }
   .navbar a:hover {
-      background-color: #ab0bbd;
-      color: white;
+      color: FF369A;
+      font-size: 19px;
   }
+
 .pcontent {
     display: flex;
     justify-content: space-between;
@@ -62,10 +65,10 @@ body {
 .pleftcontainer5 .weatherapp h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color: #4d12a1;
+    color: #FF369A;
 }
 .project1 h1{
-    color:#4d12a1;
+    color:#FF369A;
     font-size: 29px;
 
 }
@@ -74,7 +77,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #7A82B0;
+   color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -99,11 +102,54 @@ body {
 
 
 
+.xyz ul {
+    padding: 0; /* Ensure no extra padding is applied to the list */
+    margin: 0; /* Reset any default margin */
+    list-style-type: disc; /* Use a standard bullet point style */
+  }
+  
+  .xyz li {
+    margin-bottom: 15px; /* Add spacing between bullet points */
+    line-height: 1.6; /* Adjust the space between lines for better readability */
+    color: white; /* Ensure text color matches the design */
+  }
+  
+  .todo ul {
+    padding: 0; /* Ensure no extra padding is applied to the list */
+    margin: 0; /* Reset any default margin */
+    list-style-type: disc; /* Use a standard bullet point style */
+  }
+  
+  .todo li {
+    margin-bottom: 15px; /* Add spacing between bullet points */
+    line-height: 1.6; /* Adjust the space between lines for better readability */
+    color: white; /* Ensure text color matches the design */
+  }
 
-
-
-
-
+  .weatherapp ul {
+    padding: 0; /* Ensure no extra padding is applied to the list */
+    margin: 0; /* Reset any default margin */
+    list-style-type: disc; /* Use a standard bullet point style */
+  }
+  
+  .weatherapp li {
+    margin-bottom: 15px; /* Add spacing between bullet points */
+    line-height: 1.6; /* Adjust the space between lines for better readability */
+    color: white; /* Ensure text color matches the design */
+  }
+  
+  .spotify ul {
+    padding: 0; /* Ensure no extra padding is applied to the list */
+    margin: 0; /* Reset any default margin */
+    list-style-type: disc; /* Use a standard bullet point style */
+  }
+  
+  .spotify li {
+    margin-bottom: 15px; /* Add spacing between bullet points */
+    line-height: 1.6; /* Adjust the space between lines for better readability */
+    color: white; /* Ensure text color matches the design */
+  }
+  
 
 .pcontent2 {
     display: flex;
@@ -121,10 +167,10 @@ body {
 .pleftcontainer5 .weatherapp h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color: #4d12a1;
+    color: #FF369A;
 }
 .project2 h1{
-    color:#4d12a1;
+    color:#FF369A;
         font-size: 29px;
 
 }
@@ -133,7 +179,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #7A82B0;
+   color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -179,7 +225,7 @@ body {
     color: #FF369A;
 }
 .project3 h1{
-    color:#4d12a1;
+    color:#FF369A;
         font-size: 29px;
 
 }
@@ -188,7 +234,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #7A82B0;
+   color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -209,4 +255,114 @@ body {
     width: auto;
     display: block;
     border-radius: 10px; /* Adjust to make the image corners rounded */
+}
+
+
+.pcontent0 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Add some space between the sections */
+}
+
+.pleftcontainer0 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+.pleftcontainer0 .spotify h1 {
+    font-size: 30px;
+    font-family:'Inter', serif;
+    color: #FF369A;
+}
+.project0 h1{
+    color:#FF369A;
+        font-size: 29px;
+
+}
+
+.spotify {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 10px; 
+   color: white;
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.prightcontainer0 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.prightcontainer0 img {
+    max-width: 150%;  /* Increase the width of the image to make it larger */
+    max-height: 70vh; /* Set a max height for the image to avoid distortion */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Optional: make corners rounded */
+    margin-left: 50px;  /* Move the image more to the right */
+}
+
+
+
+
+
+
+.pcontent-1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px; /* Add some space between the sections */
+}
+
+.pleftcontainer-1 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the left container */
+    box-sizing: border-box; /* Include padding in the element's width */
+
+}
+.pleftcontainer-1 .pinterest h1 {
+    font-size: 30px;
+    font-family:'Inter', serif;
+    color: #FF369A;
+}
+.project-1 h1{
+    color:#FF369A;
+        font-size: 29px;
+
+}
+
+.pinterest {
+    width: 100%; /* Full width of the container */
+    height: 60vh;
+    padding: 10px; 
+   color: white;
+    box-sizing: border-box; /* Include padding in the element's width */
+}
+
+.prightcontainer-1 {
+    width: 50%; /* Adjust width as needed */
+    padding: 20px; /* Add padding to the right container */
+    box-sizing: border-box; /* Include padding in the element's width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    flex-direction: column; /* Ensure items stack vertically */
+}
+
+.prightcontainer-1 img {
+    max-width: 100%;  /* Increase the width of the image to make it larger */
+    max-height: 100%; /* Set a max height for the image to avoid distortion */
+    height: auto;
+    width: auto;
+    display: block;
+    border-radius: 10px; /* Optional: make corners rounded */
+    margin-left: -20px;  /* Move the image more to the right */
 }

@@ -13,6 +13,9 @@
     <a href="#Home">Home</a>
     <a href="#Experience" routerLink="/experience">Experiences</a> 
     <a href="#Projects" routerLink = "/project">Projects</a>
+    <a href="https://github.com/PrakritiPat" target="_blank" class="github-button">
+        <button>GitHub</button>
+    </a>
 </div>
 
 
@@ -21,11 +24,10 @@
 
 <div class="content">
     <div class="aboutme-container">
-        <h1>About me!</h1>
-        <p>Computer Science and Mathematics Major with a Illustration and Animation Minor: at Santa Clara University.</p>
-        <p> My passions include Front-End Developing, Web Design, and Augmented Reality.</p>
-        <p> My lastest internship has been a Data Analyst intern at Lassen Peaks. My current job is an UX/UI Designer at the Human Computer Interation Lab in Santa Clara University.</p>
-        <p> And.. Yes! The cursor is a baby octupus I designed! </p>
+        <h1>About me! 🐙</h1>
+        <p>Hi! I am Prakriti, a Computer Science and Animation & Illustration student at Santa Clara University. </p>
+        <p>I create, design, and implement meaningful projects that help voice under represented communities. </p>
+        <p>Let’s create more unique projects together. And yes.. the cursor is an octopus I designed!</p>
     </div>
 
     <div class="right-container">
@@ -33,7 +35,8 @@
             <img src="../assets/headshot.png" alt="Circular Image">
         </div>
         <div class="hello">
-            <h1>Hello I'm Prakriti Patnaik!</h1>
+            <app-typing-effect></app-typing-effect>
+
         </div>
     </div>
 </div>
@@ -51,19 +54,19 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     cursor: url('/assets/oct.png.png'), auto;
-    background-color: white;
-    background-size: cover; /* Cover the entire page */
-    min-height: 100vh; /* Ensure body covers at least the viewport height */
-    background-position: center center; /* Center the image */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    background-color: black;
+    background-size: cover; 
+    /*min-height: 100vh; /* Ensure body covers at least the viewport height */
+    background-position: center center;
+    overflow-x: hidden; 
         
 } 
   
   .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background-color: rgb(207, 189, 215);
+    background-color: black;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -71,35 +74,67 @@ body {
     width: 100vw; /* Ensure navbar stretches across the full viewport width */
     height: 100px;
     margin: 0;
-    padding: 0;
+    padding: 0 50px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     z-index: 1000; /* Ensure navbar is on top */
   }
   .navbar a {
       
       display: block;
-      color: #4d12a1;
+      color: #FF369A;
       text-align: center;
       border-radius: 10px;
       padding: 14px 20px;
+      font-size: 17px; 
+
       text-decoration: none;
      
 
   }
   .navbar a:hover {
-      background-color: #ab0bbd;
-      color: white;
+      color: FF369A;
+      font-size: 19px;
   }
 
-  
+  .github-button button {
+    background-color: #FF369A ; /* GitHub dark gray color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+.aboutme-container p {
+    color: white; /* Your existing color */
+    margin-bottom: 20px; /* Adds spacing below each paragraph */
+    line-height: 1.6; /* Improves readability by adjusting line height */
+}
+
+.aboutme-container h1 {
+    color: white; /* Your existing color */
+    margin-bottom: 20px; /* Adds spacing below each paragraph */
+    line-height: 1.6; /* Improves readability by adjusting line height */
+}
+
+
+.github-button button:hover {
+    background-color: #a81e63; /* Darker shade on hover */
+}
+
 
   .content {
+
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 120px; 
-    padding: 20px; /* Uniform padding */
+    padding: 20px; 
     min-height: calc(100vh - 120px);
+    margin-left: 50px; /* Shift everything 50px to the right */
+    
+
 }
 
 
@@ -115,7 +150,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 50px; /* Move the image container down */
+      margin-top: 40px; 
+      margin-left: 50px;/* Move the image container down */
   }
   .image-container {
       width: 450px; /* Set the desired width */
@@ -127,10 +163,10 @@ body {
       margin-top: 10px; /* Move the image container down */
   }
   .aboutme-container p {
-      color: #7A82B0; /* Change to your desired color */
+      color: white; /* Change to your desired color */
   }
   .aboutme-container h1 {
-      color: #4d12a1; /* Change to your desired color */
+      color: #FF369A; /* Change to your desired color */
   }
 
   .image-container img {

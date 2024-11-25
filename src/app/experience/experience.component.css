@@ -7,7 +7,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-size: 22px;
     cursor: url('/assets/oct.png.png'), auto;
-    background-color: white;
+    background-color: black;
     background-size: cover; /* Cover the entire page */
     min-height: 110vh; /* Ensure body covers at least the viewport height */
     background-position: center center; /* Center the image */
@@ -15,11 +15,11 @@ body {
         
 } 
   
-  .navbar {
+.navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background-color: rgb(207, 189, 215);
+    background-color: black;
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -27,25 +27,38 @@ body {
     width: 100vw; /* Ensure navbar stretches across the full viewport width */
     height: 100px;
     margin: 0;
-    padding: 0;
+    padding: 0 50px;
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
     z-index: 1000; /* Ensure navbar is on top */
   }
   .navbar a {
       
       display: block;
-      color: #4d12a1;
+      color: #FF369A;
       text-align: center;
       border-radius: 10px;
       padding: 14px 20px;
+      font-size: 17px; 
+
       text-decoration: none;
      
 
   }
   .navbar a:hover {
-      background-color: #ab0bbd;
-      color: white;
+      color: FF369A;
+      font-size: 19px;
   }
+
+  .github-button button {
+    background-color: #FF369A ; /* GitHub dark gray color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
 .content {
     display: flex;
     justify-content: space-between;
@@ -55,7 +68,7 @@ body {
 
 .lassen-peak h1 {
     font-size: 30px;
-    color: #4d12a1;
+    color: #FF369A;
     font-family: 'Inter', serif;
     
 }
@@ -64,6 +77,8 @@ body {
 .Virtual-Reality h1{
     font-size: 30px;
     font-family:'Inter', serif;
+    color: #FF369A;
+
 }
 
 .leftcontainer {
@@ -82,7 +97,7 @@ body {
     padding: 20px; 
     border-radius: 15px;
     box-sizing: border-box; /* Include padding in the element's width */
-    color: #7A82B0;
+    color: white;
 }
 
 .rightcontainer {
@@ -130,7 +145,8 @@ body {
     font-size: 30px;
     font-family:'Inter', serif;
    
-    color:#4d12a1;
+    color:#FF369A;
+    
 
 }
 
@@ -138,7 +154,7 @@ body {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-   color: #7A82B0;
+   color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -154,7 +170,7 @@ body {
 }
 
 .rightcontainer2 p{
-    color: #7A82B0;
+    color: white;
 }
 
 .rightcontainer2 img {
@@ -187,14 +203,15 @@ body {
 .leftcontainer3 .HCI-Lab h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color:#4d12a1;
+    color:#FF369A;
+    
 }
 
 .hci {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-    color: #7A82B0;
+    color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -237,14 +254,14 @@ body {
 .leftcontainer4 .GWC h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color:#4d12a1;
+    color:#FF369A;
 }
 
 .gwc {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-    color: #7A82B0;
+    color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
@@ -289,14 +306,14 @@ body {
 .leftcontainer5 .ACM h1 {
     font-size: 30px;
     font-family:'Inter', serif;
-    color:#4d12a1;
+    color:#FF369A;
 }
 
 .acm {
     width: 100%; /* Full width of the container */
     height: 60vh;
     padding: 10px; 
-    color: #7A82B0;
+    color: white;
     box-sizing: border-box; /* Include padding in the element's width */
 }
 

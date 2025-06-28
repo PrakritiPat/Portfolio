@@ -3,189 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Bar Example</title>
+    <title>Prakriti's Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            cursor: url('/assets/oct.png'), auto;
+            background-color: #F5F5F5;
+            background-size: cover;
+            background-position: center;
+            overflow-x: hidden;
+            color: #222222;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #F5F5F5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            padding: 0 40px;
+            z-index: 1000;
+        }
+        
+        .navbar a {
+            color: #007BFF;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #09386b;
+        }
+        
+        .github-button button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .github-button button:hover {
+            background-color: #09386b;
+        }
+        .content {
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 120px; 
+        padding: 20px; 
+        min-height: calc(100vh - 120px);
+        margin-left: 50px; /* Shift everything 50px to the right */
+
+
+        }
+
+
+
+        .aboutme-container {
+        width: 40%;
+        height: 50vh;
+        padding: 80px; 
+        
+        
+        }
+        .right-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px; 
+        margin-left: 50px;/* Move the image container down */
+        }
+        .image-container {
+        width: 450px; /* Set the desired width */
+        height: 450px; /* Set the desired height */
+        overflow: hidden; /* Ensures the image does not overflow the container */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; /* Move the image container down */
+        }
+        .aboutme-container p {
+        color: #222222; /* Change to your desired color */
+        }
+        .aboutme-container h1 {
+        color: #007BFF; /* Change to your desired color */
+        }
+
+        .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px; /* Ensures the image scales correctly */
+        }
+
+
+        .hello {
+        margin-top: 20px; /* Space between image and text */
+        text-align: center; /* Center the text */
+        color: #222222;
+        }
+      
+            
+ </style>
 </head>
 <body>
-
-<div class="navbar">
-    <a href="#Home">Home</a>
-    <a href="#Experience" routerLink="/experience">Experiences</a> 
-    <a href="#Projects" routerLink = "/project">Projects</a>
-    <a href="https://github.com/PrakritiPat" target="_blank" class="github-button">
-        <button>GitHub</button>
-    </a>
-</div>
-
-
-
-
-
-<div class="content">
-    <div class="aboutme-container">
-        <h1>About me! 🐙</h1>
-        <p>Hi! I am Prakriti, a Computer Science and Animation & Illustration student at Santa Clara University. </p>
-        <p>I create, design, and implement meaningful projects that help voice under represented communities. </p>
-        <p>Let’s create more unique projects together. And yes.. the cursor is an octopus I designed!</p>
+    <div class="navbar">
+        <a href="#Home">Home</a>
+        <a href="#Experience" routerLink="/experience">Experiences</a>
+        <a href="#Projects" routerLink="/project">Projects</a>
+        <a href="https://github.com/PrakritiPat" target="_blank" class="github-button">
+            <button>GitHub</button>
+        </a>
     </div>
-
-    <div class="right-container">
-        <div class="image-container">
-            <img src="../assets/headshot.png" alt="Circular Image">
+    
+    <div class="content">
+        <div class="aboutme-container">
+            <h1>About Me</h1>
+            <p>Hi! I'm Prakriti, a Computer Science and Animation & Illustration student at Santa Clara University.</p>
+            <p>I design and build meaningful projects that amplify the voices of underrepresented communities.</p>
+            <p>Let’s collaborate to create something unique.</p>
         </div>
-        <div class="hello">
-            <app-typing-effect></app-typing-effect>
-
-        </div>
-    </div>
-</div>
-
-</body>
-
-
-
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh; /* Ensure body takes up full viewport height */
-    width: 100vw;
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    cursor: url('/assets/oct.png.png'), auto;
-    background-color: black;
-    background-size: cover; 
-    /*min-height: 100vh; /* Ensure body covers at least the viewport height */
-    background-position: center center;
-    overflow-x: hidden; 
         
-} 
-  
-  .navbar {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: black;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    left: 0; /* Ensure navbar starts at the very left */
-    width: 100vw; /* Ensure navbar stretches across the full viewport width */
-    height: 100px;
-    margin: 0;
-    padding: 0 50px;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    z-index: 1000; /* Ensure navbar is on top */
-  }
-  .navbar a {
-      
-      display: block;
-      color: #FF369A;
-      text-align: center;
-      border-radius: 10px;
-      padding: 14px 20px;
-      font-size: 17px; 
-
-      text-decoration: none;
-     
-
-  }
-  .navbar a:hover {
-      color: FF369A;
-      font-size: 19px;
-  }
-
-  .github-button button {
-    background-color: #FF369A ; /* GitHub dark gray color */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
-}
-.aboutme-container p {
-    color: white; /* Your existing color */
-    margin-bottom: 20px; /* Adds spacing below each paragraph */
-    line-height: 1.6; /* Improves readability by adjusting line height */
-}
-
-.aboutme-container h1 {
-    color: white; /* Your existing color */
-    margin-bottom: 20px; /* Adds spacing below each paragraph */
-    line-height: 1.6; /* Improves readability by adjusting line height */
-}
-
-
-.github-button button:hover {
-    background-color: #a81e63; /* Darker shade on hover */
-}
-
-
-  .content {
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 120px; 
-    padding: 20px; 
-    min-height: calc(100vh - 120px);
-    margin-left: 50px; /* Shift everything 50px to the right */
-    
-
-}
-
-
-
-  .aboutme-container {
-      width: 40%;
-      height: 50vh;
-      padding: 80px; 
-     
-     
-  }
-  .right-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 40px; 
-      margin-left: 50px;/* Move the image container down */
-  }
-  .image-container {
-      width: 450px; /* Set the desired width */
-      height: 450px; /* Set the desired height */
-      overflow: hidden; /* Ensures the image does not overflow the container */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 10px; /* Move the image container down */
-  }
-  .aboutme-container p {
-      color: white; /* Change to your desired color */
-  }
-  .aboutme-container h1 {
-      color: #FF369A; /* Change to your desired color */
-  }
-
-  .image-container img {
-      width: 100%;
-      height: auto; /* Ensures the image scales correctly */
-  }
-
-
-  .hello {
-      margin-top: 20px; /* Space between image and text */
-      text-align: center; /* Center the text */
-      color: #4d12a1;
-  }
-
-  .hello h1 {
-      font-family: 'Inter', serif; /* Apply the 'Kaisei Decol' font */
-  }
-</style>
+        <div class="right-container">
+            <div class="image-container">
+                <img src="../assets/headshot.png" alt="Prakriti's Headshot">
+            </div>
+            <div class="hello">
+                <app-typing-effect></app-typing-effect>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
-
-
-

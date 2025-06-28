@@ -3,167 +3,402 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Experiences</title>
     <style>
-        /* Insert the updated CSS code here */
-    </style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: F5F5F5;
+            color: white;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .container-row {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 150px auto; /* Centers it and pushes it below navbar */
+        }
+
+        .box1 {
+            width: 250px;
+            height: 400px;
+            background-color: #cecfda;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #007BFF;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+        .title1{
+            justify-content:center;
+            align-items: center;
+
+
+
+        }
+        .box2 {
+            width: 250px;
+            height: 400px;
+            background-color: #cecfda;
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+        .box3 {
+            width: 250px;
+            height: 400px;
+            background-color: #cecfda;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .box4 {
+            width: 250px;
+            height: 400px;
+            background-color: #cecfda;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+
+        }
+        .navbar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: #F5F5F5;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 80px;
+            padding: 0 10px;
+            z-index: 1000;
+        }
+        
+        .navbar a {
+            color: #007BFF;
+            text-decoration: none;
+            padding: 12px 18px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        .navbar a:hover {
+            color: #09386b;
+        }
+        
+        .github-button button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .github-button button:hover {
+            background-color: #09386b;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: white;
+            width: 70%;
+            max-width: 600px;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            color: black;
+            text-align: center;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 20px;
+            cursor: pointer;
+            color: red;
+        }
+
+        .close-btn:hover {
+            color: darkred;
+        }
+
+
+        .bottom-container1 {
+         width: 85%;
+          margin: 40px auto;
+         padding: 30px;
+         background-color: #ffffff;
+         color: #333333;
+         border-radius: 10px;
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+         text-align: center;
+        font-size: 18px;
+        }
+
+.bottom-container1 h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+
+.bottom-container1 h3 {
+    color: #0b243f;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+        
+.bottom-container2 {
+         width: 85%;
+          margin: 40px auto;
+         padding: 30px;
+         background-color: #ffffff;
+         color: #333333;
+         border-radius: 10px;
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+         text-align: center;
+        font-size: 18px;
+        }
+
+.bottom-container2 h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+
+.bottom-container2 h3 {
+    color: #0b243f;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+        
+.bottom-container3 {
+         width: 85%;
+          margin: 40px auto;
+         padding: 30px;
+         background-color: #ffffff;
+         color: #333333;
+         border-radius: 10px;
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+         text-align: center;
+        font-size: 18px;
+        }
+
+.bottom-container3 h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+
+.bottom-container3 h3 {
+    color: #0b243f;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.bottom-container4 {
+         width: 85%;
+          margin: 40px auto;
+         padding: 30px;
+         background-color: #ffffff;
+         color: #333333;
+         border-radius: 10px;
+         box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+         text-align: center;
+        font-size: 18px;
+        }
+
+.bottom-container4 h2 {
+    color: #007BFF;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+
+.bottom-container4 h3 {
+    color: #0b243f;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+</style>
 </head>
-
 <body>
-<div class="main-header">
-    <h1>Experiences</h1>
-</div>
+    <div class="navbar">
+        <a routerLink="/">Home</a>
+        <a routerLink="/experience">Experiences</a>
+        <a routerLink="/project">Projects</a>
+        <a href="https://github.com/PrakritiPat" target="_blank" class="github-button">
+            <button>GitHub</button>
+        </a>
+    </div>
+    
 
-<div class="navbar">
-    <a routerLink="/">Home</a>
-    <a routerLink="/experience">Experiences</a>
-    <a routerLink="/project">Projects</a>
-</div>
+    <div class="container-row">
+        <div class="box1">
+          <div class="title1">Lassen Peak Data Science Internship</div>
+          <div class="upperbox1">
+            <img src="../assets/lassen_peak_logo.jpeg" alt="lassenpeak logo" />
+          </div>
 
-<div class="content">
-    <div class="leftcontainer">
-        <div class="lassen-peak">
-            <h1>Lassen Peak Internship</h1>
-        </div>
-        <div class="lpa">
-        
-               <ul>
-                <li> The Lassen Peak company is creating hand-held devices for law enforcement detect weapons on  people without frisking.</li>
-                <li> I worked on collecting data from these devices and creating data models. </li>
-                <li> analyzed the data and provided feedback upon which Signal to Noise Ratio (SnR) was the most accurate, and compared the different software upgrades to determine most effective one.</li>
-                <li> Worked with the computer scientists to write Python Scripts to calculate the average amount of accurate detections the device was scanning per frame. </li>
-                <li> Learned how to calibrate these devices, and how to establish a ssh connection to these devices.</li>
-             </ul> 
-
-
+          <button class="read-more-btn" 
+            data-title="Lassen Peak Data Science Internship" 
+            data-content="Worked on machine learning models for predictive analytics and data visualization."
+            (click)="scrollTo(lassen)">
+             Read More
+        </button>   
           
         </div>
-    </div>
+        <div class="box2">
+            <div class="title1">UX/UI Designer at SCU HCI Lab</div>
+            <div class="upperbox1">
+              <img src="../assets/scu_hci_logo.jpeg" alt="hci logo" />
+            </div>
 
-    <div class="rightcontainer">
-        <div class="lassenpeakimage">
-            <img src="../assets/lassenpeakimage.png" alt="Lassen Peak Image">
+            <button class="read-more-btn" 
+                data-title="UX/UI Designer at SCU HCI Lab" 
+                data-content="Designed user interfaces and conducted usability testing for research projects."
+                (click)="scrollTo(lassen)">
+                 Read More
+            </button>
+
         </div>
-    </div>
-</div>
+          <div class="box3">
+            <div class="title1">VR Game Developer at SCU Imaginarium Lab</div>
+            <div class="upperbox1">
+              <img src="../assets/imaginarium.png" alt="vr logo" />
+            </div>
+            <button class="read-more-btn" 
+                data-title="VR Game Developer at SCU Imaginarium Lab" 
+                data-content="Developed immersive VR applications and interactive experiences."
+                (click)="scrollTo(vr)">
+                Read More
+            </button>
 
 
+          </div>
+          <div class="box4">
+            <div class="title1">Web Developer for SCU ACM-W</div>
+            <div class="upperbox1">
+              <img src="../assets/acmwlogo.png" alt="acmw logo" />
+            </div>
+            <button class="read-more-btn" 
+                data-title="Web Developer for SCU ACM-W" 
+                data-content="Built and maintained the ACM-W website with React and modern web technologies."
+                (click)="scrollTo(acmw)">
+                Read More
+            </button>
 
-<div class="content2">
-    <div class="leftcontainer2">
-        <div class="Virtual-Reality">
-            <h1>Game Developer and Researcher at Virtual Reality Lab</h1>
-        </div>
-        <div class="ivr">
-        
-               <ul>
-                <li> I worked on a video game designed by the Imaginarium Virtual Reality Lab at my university. </li>
-                <li> this video game is used for research on body image and body dysmorphia in augmented reality. </li>
-                <li>Gained skills in game development from Unity and converting these games onto QuestPro VR headsets. </li>
-                <li>created a Virtual Reality Fruit Ninja Game, showcasing my C# skills and my understanding of VR games on Unity. </li>
-                <li>I worked on extracting xyz plane coordinates of an object’s position and the position of eye tracking object, and converting to a CSV file, done by C#. </li>
-                <li> I also worked as a researcher for the project, aided participant through the game, collected their data to analyze.</li>
-             </ul> 
-
-
+          </div>
           
-        </div>
-    </div>
-
-    <div class="rightcontainer2">
-        <div class="VRimage">
-            <img src="../assets/IVR.png" alt="VR Image">
-        </div>
-        <p> Here is an example of the UI designing I did for the video game.</p>
-    </div>
-</div>
 
 
+      </div>
 
-<div class="content3">
-    <div class="leftcontainer3">
-        <div class="HCI-Lab">
-            <h1>UX/UI Designer for Human Computer Interaction Lab</h1>
-        </div>
-        <div class="hci">
-        
-               <ul>
-                <li> Currently working as a UX/UI designer on the development and design of an Augmented Reality (AR) tour application that aims to restore the voices of the Ohlone Native American people and challenge colonialist narratives.</li>
-                <li>Used Figma to create and improve UI/UX designs, ensuring smooth user interactions and appealing visuals.</li>
-                <li>Contributed to the latest UI changes, focusing on onboarding screens, logos, and branding to enhance user experience and maintain visual consistency.</li>
-                <li>Designed HCI Lab's App Logo and created creative flyers for our app launch. </li>
-                <li> Fluent in Figma through hours of designing portions of the app. </li>
-                
-             </ul> 
-
-
-          
-        </div>
-    </div>
-
-    <div class="rightcontainer3">
-        <div class="HCIimage">
-            <img src="../assets/hci.png" alt="HCI Image" style="width: 600px; height: auto;">
-        </div>
+      
+<!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-content"></p>
     </div>
 </div>
 
 
-<div class="content4">
-    <div class="leftcontainer4">
-        <div class="GWC">
-            <h1>GirlsWhoCode</h1>
-        </div>
-        <div class="gwc">
-        
-               <ul>
-                <li>Teaching high schoolers how to create video games using p5Play JavaScript Library using Replit.</li>
-                <li>Spent 35+ hours a week planning, designing curriculum, education students, and helping them create projects.</li>
-                <li>Partnered with Bank of America and Synchrony Bank to teach Cyber Security to high schoolers.</li>
-                <li>Learned basic cryptography from Bank of America and Synchrony Bank Employees.</li>
-                <li>Empowered high school girls to join technology field through events from Bank of America and Synchrony Bank.</li>
-                <li>The image on the right is an examole of a game I taught my students to create through JavaScript.</li>
-             </ul> 
+<div class="bottom-container1" #lassen>
+    <h2>More About Lassen Peak Data Internship</h2>
+    <h3>May 2024-Sept 2024</h3>
+    <p>
+      During my internship, I developed diagnostic and performance benchmarking tools using Python and C++ to evaluate radar-based embedded systems. I worked closely with low-level hardware interfaces, testing system communication over I2C and SPI buses. To simulate real-world embedded constraints, I wrote custom scripts that monitored CPU and RAM usage in real time.
+  
+      I also built dynamic dashboards in Tableau and Excel (using advanced formulas and macros) to visualize trends in signal integrity and system performance. As part of the QA process, I contributed to debugging multi-threaded sensor data pipelines and worked within bug tracking systems to support real-time issue resolution. I practiced test-driven development using NUnit and wrote unit tests to help ensure the reliability of our embedded analytics workflows.
+      
+      I regularly used Microsoft Excel and PowerPoint to communicate findings and present technical results to cross-functional teams.
+    </p>
+  </div>
+  
+  <div class="bottom-container2" #hci>
+    <h2>More About my Augmented Reality UX Designer Design Lead Role at the SCU Human Computer Interaction Lab</h2>
+    <h3>June 2024-present</h3>
+    <p>
+      I’m currently collaborating in an Agile team to build an Augmented Reality (AR) tour app designed to restore and share the voices of the Ohlone Native American people. This project has been recognized globally, winning three awards for its innovation and cultural impact.
+  
+      Using Unity and C#, I developed interactive game stops and helped implement the navigation system that guides users through the experience. As the design technical lead, I manage a team of seven SCU students—leading design meetings, assigning tasks, and resolving conflicts to keep the project on track.
+  
+      I’ve created onboarding screens, branding elements, and UI/UX flows using Figma, and worked on integrating authentic tribal elements through advanced 3D modeling in Blender and Unity.
+    </p>
+  </div>
+  
+  <div class="bottom-container3" #vr>
+    <h2>More About my Lab Game Data Scientist Role at the Santa Clara University VR/AR Imaginarium</h2>
+    <h3>January 2024- June 2024</h3>
+    <p>
+      I built an eye-tracking analytics system in C, designed to operate on resource-limited platforms by extracting and processing behavioral data from Unity-based games. I structured game logs and transformed them into embedded-friendly CSV pipelines for further analysis.
+  
+      To ensure efficient real-time processing, I analyzed system latency and optimized the spatial pattern detection logic. I also developed a modular data processing pipeline using Python and SQL, tailored for compatibility with embedded environments.
+  
+      Working with multi-threaded analysis and live data streaming, I helped enhance both sensor responsiveness and overall system usability. As part of a research team, I also contributed to simulating RTOS scheduling models and refining device logic under tight hardware constraints.
+    </p>
+  </div>
+  
 
-
-          
-        </div>
-    </div>
-
-    <div class="rightcontainer4">
-        <div class="GWCimage">
-            <img src="../assets/GWC.png" alt="gwc Image" style="width: 600px; height: auto;">
-        </div>
-    </div>
-</div>
-
-<div class="content5">
-    <div class="leftcontainer5">
-        <div class="ACM">
-            <h1>ACM-W(Association for Computing Machinery): Web Developer Position</h1>
-        </div>
-        <div class="acm">
-               <ul>
-                <li>Completely rebranded of the Santa Clara University’s ACM-W website.</li>
-                <li>created a web design wire frame and outline ACM-W website on Figma, establishing UX/UI skills.</li>
-                <li>Currently using ReactJS to create the website.</li>
-                <li>Will do weekly updated website through HTML, CSS, and JavaScript.</li>
-                <li> Planned Hack for Humanity Hackathon, and organizing events for empowering women in the Computer Science field.</li>
-                <li>Board Member-Freshman Representative (2023-2024): Assisted in Coding Workshops, finding guest speakers.</li>
-             </ul> 
-
-
-          
-        </div>
-    </div>
-
-    <div class="rightcontainer5">
-        <div class="GWCimage">
-            <img src="../assets/ACM-W.png" alt="acm Image" style="width: 600px; height: auto;">
-        </div>
-    </div>
-</div>
+  <div class="bottom-container4" #acmw>
+    <h2>More About my Web Developer Role for ACM-W</h2>
+    <h3>June 2024 - June 2025</h3>
+    <p>
+      I designed and launched the national ACM-W website using ReactJS, React Router, and a SQL backend, ensuring full cross-platform support. I built a robust routing architecture and responsive components, all deployed under a tight two-month deadline.
+  
+      I maintained version control using Git and GitHub and supported continuous integration practices throughout development. I also helped organize team workflows related to event planning and our annual Hack for Humanity hackathon.
+  
+      As the UX lead, I used Figma to design and refine the site’s interface, focusing on accessibility and user-friendly navigation across all devices.
+    </p>
+  </div>
+  
 
 </body>
 </html>
